@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="freecrmapplication">
+ 
+	 <test thread-count="5" name="end to end test on Firefox">
+	   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+     <  <class name=FreeCRMApplicationTest.FreecrmapplicationT.HomepagefreecrmTest"/>
+       <class name="FreeCRMApplicationTest.FreecrmapplicationT.LoginpageTest"/>
+        <class name="FreeCRMApplicationTest.FreecrmapplicationT.ContactpageTest"/>
+       
+      </classes>
+       </test> <!-- end to end test -->
+   <test thread-count="5" name="end to end test on chrome">
+	   <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name=FreeCRMApplicationTest.FreecrmapplicationT.Homepagefreecrmtest"/>
+       <class name="FreeCRMApplicationTest.FreecrmapplicationT.Loginpagetest"/>
+        <class name="FreeCRMApplicationTest.FreecrmapplicationT.Contactpagetest"/>
+       
+      </classes>
+  </test>  <!-- end to end test --> 
+</suite> <!-- freecrmapplication -->
